@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Made Food | Home Service Center - Mithi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #fff8e1, #ffffff);
+      color: #4e342e;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, #ffb703, #fb8500);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: #fb8500;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #4e342e;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* HOME SECTION */
+    #home {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    #home img {
+      width: 45%;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #home .hero-text {
+      flex: 1;
+    }
+
+    #home h2 {
+      font-size: 28px;
+      color: #fb8500;
+      margin-bottom: 15px;
+    }
+
+    #home p {
+      line-height: 1.6;
+      color: #5d4037;
+    }
+
+    ul {
+      margin-top: 10px;
+      margin-left: 20px;
+      color: #3e2723;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #fb8500;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffb703;
+      transform: scale(1.05);
+    }
+
+    /* ABOUT SECTION */
+    #about {
+      background: #fff3e0;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #about h2 {
+      color: #fb8500;
+      font-size: 28px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    #about p {
+      line-height: 1.7;
+      font-size: 1.05rem;
+      color: #5d4037;
+      text-align: center;
+    }
+
+    /* CLIENT SECTION */
+    #clients {
+      text-align: center;
+      background: #ffecb3;
+      border-radius: 15px;
+      padding: 50px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #clients h2 {
+      color: #fb8500;
+      margin-bottom: 25px;
+    }
+
+    .client-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .client-card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .client-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .client-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .client-card h3 {
+      color: #fb8500;
+      margin-top: 10px;
+    }
+
+    .client-card p {
+      color: #555;
+      font-size: 0.95rem;
+      margin-top: 5px;
+    }
+
+    footer {
+      text-align: center;
+      background: #fb8500;
+      color: white;
+      padding: 15px;
+      border-top: 3px solid #ffb703;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍲 Home Made Food Services</h1>
+    <p>Delicious & Fresh Home Cooked Meals in Mithi</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#clients">Clients</a>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <img src="./ra.jpeg" alt="Home Cooked Food">
+
+    <div class="hero-text">
+      <h2>Fresh, Healthy & Hygienic Food at Your Doorstep</h2>
+      <p>
+        Enjoy authentic <strong>home-made food in Mithi</strong> prepared with love and care.
+        Perfect for students, working professionals, and families who prefer healthy, home-style meals
+        instead of fast food. We provide both daily tiffin services and special catering options.
+      </p>
+
+      <ul>
+        <li>🍛 Daily Tiffin & Lunch Delivery</li>
+        <li>🥗 Fresh Home-Made Meals (Veg & Non-Veg)</li>
+        <li>🍱 Custom Meal Plans</li>
+        <li>🎉 Party & Event Catering</li>
+        <li>🚚 On-Time Doorstep Delivery</li>
+      </ul>
+
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Our Food Service</h2>
+    <p>
+      <strong>Home Service Center - Mithi</strong> connects you with talented home chefs
+      offering delicious, hygienic meals prepared using fresh ingredients.
+      Whether you need a daily meal subscription or catering for a gathering,
+      we make sure you get the perfect taste of home — every time.
+    </p>
+  </section>
+
+  <!-- CLIENTS SECTION -->
+  <section id="clients">
+    <h2>Our Happy Customers</h2>
+    <div class="client-grid">
+      <div class="client-card">
+        <img src="./abubakr.jpg" alt="Client 1">
+        <h3>Abubakar</h3>
+        <p>“Amazing taste and great hygiene. Feels just like home food!”</p>
+        <p>⭐⭐⭐⭐⭐</p>
+         <a href="HMF.html">Client</a>
+      </div>
+
+      <div class="client-card">
+        <img src="./Abdul ghaffar.png" alt="Client 2">
+        <h3>Abdul Ghaffar</h3>
+        <p>“They deliver on time every day. Very professional service.”</p>
+        <p>⭐⭐⭐⭐⭐</p>
+         <a href="HMF-2.html">Client</a>
+      </div>
+
+      <div class="client-card">
+        <img src="./asad.jpg" alt="Client 3">
+        <h3>Asadullah</h3>
+        <p>“The tiffin service is affordable and the food is fresh daily!”</p>
+        <p>⭐⭐⭐⭐⭐</p>
+         <a href="HMF-3.html">Client</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>2025 Home Service Center | Mithi | Fresh Home Made Food at Your Doorstep</p>
+  </footer>
+
+</body>
+</html>

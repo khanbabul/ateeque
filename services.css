@@ -1,0 +1,370 @@
+/* 🌟 Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f0f8ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 🌈 HEADER */
+header {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+/* 🧭 NAVIGATION */
+nav {
+  background: #023e8a;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background: #00b4d8;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* 🏡 HOME SECTION */
+.home-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url("g:\HOME SERVICES\picture\home ser.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.home-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0077b6;
+}
+
+.home-section p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+
+
+/* 🏠 ABOUT */
+#about {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+#about .highlight {
+  color: #00b4d8;
+  font-weight: 600;
+}
+
+#about p {
+  max-width: 800px;
+  margin: 1rem auto;
+  font-size: 1rem;
+}
+
+/* 💼 SERVICES */
+#services {
+  padding: 4rem 2rem;
+  background: #e0f7fa;
+  text-align: center;
+}
+
+#services h2 {
+  color: #0077b6;
+  margin-bottom: 2rem;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 1rem 0;
+  color: #0077b6;
+}
+
+.card a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: #00b4d8;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.card a:hover {
+  background: #0077b6;
+}
+
+/* 📝 REGISTER FORM */
+.register-form {
+  background: linear-gradient(135deg, #90e0ef, #caf0f8);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.register-form h2 {
+  color: #023e8a;
+  margin-bottom: 2rem;
+}
+
+.register-form form {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.register-form label {
+  display: block;
+  text-align: left;
+  margin: 0.8rem 0 0.3rem;
+  color: #0077b6;
+  font-weight: 600;
+}
+
+.register-form input,
+.register-form select,
+.register-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.register-form button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-form button:hover {
+  background: #023e8a;
+}
+
+/* 📞 CONTACT */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.info-item {
+  text-align: center;
+  background: #e0f7fa;
+  padding: 2rem;
+  border-radius: 16px;
+  flex: 1 1 280px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.info-item:hover {
+  transform: translateY(-8px);
+}
+
+.info-item h2 {
+  color: #0077b6;
+  margin: 0.5rem 0;
+}
+
+.info-item a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #00b4d8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+}
+
+/* 💬 FEEDBACK */
+#feedback {
+  background: linear-gradient(135deg, #caf0f8, #ade8f4);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#feedback h2 {
+  color: #023e8a;
+  margin-bottom: 2rem;
+}
+
+.feedback-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.feedback-form button {
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.feedback-form button:hover {
+  background: #023e8a;
+}
+#clients {
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  margin-top: 40px;
+}
+
+#clients h2 {
+  color: #1565c0;
+  font-size: 30px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.client-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: wrap; /* stays responsive on mobile */
+}
+
+.client-card {
+  background: white;
+  width: 240px;
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.client-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(21,101,192,0.3);
+}
+.client-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.client-card h3 {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #1565c0;
+}
+.client-card p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* ⚓ FOOTER */
+footer {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .home-section p,
+  #about p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mechanical Services | Home Service Center - Mithi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #e8f5e9, #ffffff);
+      color: #1b5e20;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, #388e3c, #1b5e20);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: #388e3c;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c8e6c9;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* HOME SECTION */
+    #home {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    #home img {
+      width: 45%;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #home .hero-text {
+      flex: 1;
+    }
+
+    #home h2 {
+      font-size: 28px;
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    #home p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    ul {
+      margin-top: 10px;
+      margin-left: 20px;
+      color: #1b5e20;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #2e7d32;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #66bb6a;
+      transform: scale(1.05);
+    }
+
+    /* ABOUT SECTION */
+    #about {
+      background: #e8f5e9;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #about h2 {
+      color: #2e7d32;
+      font-size: 28px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    #about p {
+      line-height: 1.7;
+      font-size: 1.05rem;
+      color: #444;
+      text-align: center;
+    }
+
+    /* CLIENT SECTION */
+    #clients {
+      text-align: center;
+      background: #c8e6c9;
+      border-radius: 15px;
+      padding: 50px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #clients h2 {
+      color: #2e7d32;
+      margin-bottom: 25px;
+    }
+
+    .client-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .client-card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .client-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .client-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .client-card h3 {
+      color: #2e7d32;
+      margin-top: 10px;
+    }
+
+    .client-card p {
+      color: #555;
+      font-size: 0.95rem;
+      margin-top: 5px;
+    }
+
+    footer {
+      text-align: center;
+      background: #2e7d32;
+      color: white;
+      padding: 15px;
+      border-top: 3px solid #81c784;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>⚙️ Mechanical Services</h1>
+    <p>Expert Repair & Maintenance Solutions in Mithi</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#clients">Clients</a>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <img src="./mechenical.png" alt="Mechanical Service">
+
+    <div class="hero-text">
+      <h2>Professional Mechanical Repair & Maintenance</h2>
+      <p>
+        Get your machinery, motors, and mechanical systems serviced by professionals.
+        <strong>Home Service Center - Mithi</strong> offers quick, affordable, and
+        reliable <strong>mechanical repair services</strong> for homes and industries.
+      </p>
+
+      <ul>
+        <li>🔧 Machine & Equipment Maintenance</li>
+        <li>⚙️ Motor & Pump Repair</li>
+        <li>🏠 Home Mechanical Fixes</li>
+        <li>🏭 Industrial Support Services</li>
+        <li>📞 24/7 Emergency Assistance</li>
+      </ul>
+
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Our Mechanical Service</h2>
+    <p>
+      <strong>Home Service Center - Mithi</strong> provides a wide range of mechanical
+      repair and maintenance services. From fixing small home appliances to maintaining
+      industrial machinery, our expert team ensures every job is done with precision and care.
+    </p>
+  </section>
+
+  <!-- CLIENTS SECTION -->
+  <section id="clients">
+    <h2>Our Satisfied Clients</h2>
+    <div class="client-grid">
+      <div class="client-card">
+        <img src="./saleem.jpg" alt="Client 1">
+        <h3>Saleem junejo</h3>
+        <p>“They fixed my water pump perfectly and on time!”</p>
+        <p>⭐⭐⭐⭐⭐</p>
+        <a href="mechenical-1.html">Client</a>
+      </div>
+
+      <div class="client-card">
+        <img src="./mechenical.png" alt="Client 2">
+        <h3>Ustad Wazeer</h3>
+        <p>“Professional mechanics with great service quality.”</p>
+        <p>⭐⭐⭐⭐⭐</p>
+        <a href="mechenical-2.html">Client</a>
+      </div>
+      <div class="client-card">
+        <img src="./mehboob.jpg" alt="Client 4">
+        <h3>Mehboob Sagar</h3>
+        <p>“Quick service and very affordable rates.”</p>
+        <p>⭐⭐⭐⭐⭐</p>
+        <a href="mechenical-4.html">Client</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Home Service Center | Mithi | Trusted Mechanical Repair & Maintenance Services</p>
+  </footer>
+
+</body>
+</html>

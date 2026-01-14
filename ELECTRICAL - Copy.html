@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electrical Services | Home Service Center - Mithi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      color: #023047;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, #ffb703, #fb8500);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: #fb8500;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #023047;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* HOME SECTION */
+    #home {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    #home img {
+      width: 45%;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #home .hero-text {
+      flex: 1;
+    }
+
+    #home h2 {
+      font-size: 28px;
+      color: #fb8500;
+      margin-bottom: 15px;
+    }
+
+    #home p {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    ul {
+      margin-top: 10px;
+      margin-left: 20px;
+      color: #333;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #fb8500;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffb703;
+      transform: scale(1.05);
+    }
+
+    /* ABOUT SECTION */
+    #about {
+      background: #fff7e6;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #about h2 {
+      color: #fb8500;
+      font-size: 28px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    #about p {
+      line-height: 1.7;
+      font-size: 1.05rem;
+      color: #444;
+      text-align: center;
+    }
+
+    /* CLIENT SECTION */
+    #clients {
+      text-align: center;
+      background: #fff3cd;
+      border-radius: 15px;
+      padding: 50px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #clients h2 {
+      color: #fb8500;
+      margin-bottom: 25px;
+    }
+
+    .client-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .client-card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .client-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .client-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .client-card h3 {
+      color: #fb8500;
+      margin-top: 10px;
+    }
+
+    .client-card p {
+      color: #555;
+      font-size: 0.95rem;
+      margin-top: 5px;
+    }
+
+    footer {
+      text-align: center;
+      background: #fb8500;
+      color: white;
+      padding: 15px;
+      border-top: 3px solid #ffb703;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>💡 Electrical Services</h1>
+    <p>Expert Electricians in Mithi & Nearby Areas</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#clients">Clients</a>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <img src="./electrical.jpg" alt="Professional Electrician">
+
+    <div class="hero-text">
+      <h2>Reliable Electricians in Mithi</h2>
+      <p>
+        Our professional electricians in <strong>Mithi</strong> are available 24/7 to handle all types of
+        electrical issues — from wiring installations to emergency repairs. Safe, fast, and affordable!
+      </p>
+
+      <ul>
+        <li>⚡ Wiring & Electrical Installations</li>
+        <li>💡 Lighting & Switchboard Setup</li>
+        <li>🔌 Fuse & Circuit Breaker Repairs</li>
+        <li>🏠 Home & Office Electrical Maintenance</li>
+        <li>🧯 Emergency Electrical Services (24/7)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Our Electrical Service</h2>
+    <p>
+      <strong>Home Service Center - Mithi</strong> provides skilled and certified electricians for all
+      your home or office needs. Whether it’s a simple fan installation or full-house wiring,
+      we ensure top-quality work, safety, and reliability every time.
+    </p>
+  </section>
+
+  <!-- CLIENTS SECTION -->
+  <section id="clients">
+    <h2>Our Happy Clients</h2>
+    <div class="client-grid">
+      <div class="client-card">
+        <img src="./mehboob.jpg" alt="Client 1">
+        <h3>Mehboob Sagar</h3>
+        <p>“Fixed my room wiring in no time — professional and safe service!”</p>
+         <a href="electrical-1.html">Client</a>
+      </div>
+
+      <div class="client-card">
+        <img src="./saleem.jpg" alt="Client 2">
+        <h3>Saleem Junejo</h3>
+        <p>“Installed lights and fans perfectly — very satisfied!”</p>
+         <a href="electrical-2.html">Client</a>
+      </div>
+
+      <div class="client-card">
+      <img src="./electrical-3.jpg" alt="Client 3">
+        <h3>Sobdar </h3>
+        <p>“Fast service and affordable rates. Excellent job!”</p>
+         <a href="electrical-3.html">Client</a>
+      </div>
+
+      <div class="client-card">
+        <img src="./electrical 4.jpg" alt="Client 4">
+        <h3>Husain Ahmed</h3>
+        <p>“Quick response and safe electrical work. Recommended!”</p>
+        <a href="electrical-4.html">Client</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>2025 Home Service Center | Mithi | Trusted Electrical Experts</p>
+  </footer>
+
+</body>
+</html> connected package page 

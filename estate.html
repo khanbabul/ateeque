@@ -1,0 +1,231 @@
+<!DOCTYPE html> 
+<html lang="en"> <head> 
+    <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+         <title>Real Estate Services | Home Service Center - Mithi</title> 
+           <style> 
+            * {       margin: 0;  
+            padding: 0; 
+            box-sizing: border-box;  
+           font-family: "Poppins", sans-serif;   
+           }    
+           body {    
+           background: linear-gradient(to bottom right, #e3f2fd, #ffffff);  
+            color: #0d47a1;       
+            scroll-behavior: smooth;     
+            }      
+            header {       
+            background: linear-gradient(to right, #1565c0, #002171);       
+            color: white;       
+            text-align: center;       
+            padding: 35px;       
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);     
+            }      
+            header h1 {       
+            font-size: 36px;       
+            margin-bottom: 8px;     
+            }      
+            header p {       
+            font-size: 18px;     
+            }      
+            nav {       
+              background: #0d47a1;       
+              text-align: center;       
+              padding: 12px;     
+              }      
+            nav a {       
+              text-decoration: none;       
+              color: white;       
+              font-weight: 600;       
+              margin: 0 15px;       
+              transition: color 0.3s;     
+              }      
+            nav a:hover {       
+              color: #ffca28;    
+               }      
+            section {       
+            padding: 50px 20px;       
+            max-width: 1100px;       
+            margin: auto;     
+            }     
+           /* HOME SECTION */     
+           #home {       
+            display: flex;       
+            align-items: center;       
+            gap: 40px;       
+            flex-wrap: wrap;       
+            background: white;       
+            border-radius: 20px;       
+            padding: 40px;       
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);       
+            margin-top: 40px;     
+            }      
+            #home img {       
+              width: 45%;       
+              border-radius: 20px;       
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);     
+              }      
+            #home .hero-text {       
+              flex: 1;     
+            }      
+            #home h2 {       
+              font-size: 28px;       
+              color: #0d47a1;       
+              margin-bottom: 15px;     
+              }      
+            #home p {       
+              line-height: 1.6;       
+              color: #333;     
+              }      
+            ul {       
+              margin-top: 10px;       
+              margin-left: 20px;       
+              color: #1a237e;     
+              }      
+            .btn {       
+              display: inline-block;       
+              padding: 12px 20px;       
+              background: #0d47a1;       
+              color: white;       
+              text-decoration: none;       
+              border-radius: 8px;       
+              margin-top: 20px;       
+              font-weight: 600;       
+              transition: 0.3s;     
+              }      
+            .btn:hover {       
+              background: #ffca28;       
+              color: #0d47a1;       
+              transform: scale(1.05);     
+              }      
+              /* ABOUT SECTION */     
+              #about {       
+                background: #e3f2fd;       
+                border-radius: 15px;       
+                padding: 40px;       
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);     
+                }      
+              #about h2 {       
+                  color: #0d47a1;       
+                  font-size: 28px;       
+                  margin-bottom: 15px;       
+                  text-align: center;     
+                  }      
+              #about p {       
+                line-height: 1.7;       
+                font-size: 1.05rem;       
+                color: #444;       
+                text-align: center;     
+                }      
+                /* PROPERTIES SECTION */     
+              #properties {       
+              text-align: center;       
+              background: #bbdefb;       
+              border-radius: 15px;       
+              padding: 50px 20px;       
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);     
+              }      
+              #properties h2 {       
+                color: #0d47a1;       
+                margin-bottom: 25px;     
+                }      
+             .property-grid {       
+                  display: grid;       
+                  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));       
+                  gap: 25px;       
+                  margin-top: 20px;     
+                  }      
+              .property-card {       
+                background: white;       
+                border-radius: 15px;       
+                padding: 20px;       
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);       
+                transition: transform 0.3s, box-shadow 0.3s;     
+                }      
+              .property-card:hover {       
+                transform: translateY(-5px);       
+                box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);     
+                }      
+              .property-card img {       
+                width: 100%;       
+                height: 170px;       
+                object-fit: cover;       
+                border-radius: 10px;     }      
+              .property-card h3 {       
+                color: #0d47a1;       
+                margin-top: 10px;     
+                }      
+              .property-card p {       
+                color: #555;       
+                font-size: 0.95rem;       
+                margin-top: 5px;     
+                }      
+              footer {       
+                text-align: center;       
+                background: #0d47a1;       
+                color: white;       
+                padding: 15px;       
+                border-top: 3px solid #ffca28;       
+                margin-top: 40px;     
+                }   
+              </style> 
+              </head> 
+              <body>    
+                <header>     
+                  <h1>🏡 Real Estate Services</h1>     
+                  <p>Buy, Sell, or Rent Properties in Mithi with Trusted Experts</p>   
+                </header>    
+                <nav>     
+                <a href="#home">Home</a>     
+                <a href="#about">About</a>     
+                <a href="#properties">Properties</a>   
+              </nav>    
+              <!-- HOME SECTION -->   
+              <section id="home">     
+              <img src="./real-estate.jpg" alt="Real Estate Service">      
+              <div class="hero-text">       
+                <h2>Your Trusted Property Advisors in Mithi</h2>       
+                <p><strong>Home Service Center - Mithi</strong> offers a wide range of real estate services including property sales, rentals, and investment guidance. Whether you’re looking for a new home, office, or plot — our experts help you find the best deals with transparency and trust.</p>
+                <ul><li>🏠 Buy & Sell Residential Properties</li> 
+                <li>🏢 Commercial Property Listings</li>         
+                <li>📜 Verified Legal Documentation</li>         
+                <li>💼 Rental & Lease Assistance</li>         
+                <li>📈 Investment & Plot Consultation</li>       
+              </ul>       
+              <a href="#about" class="btn">Learn More</a>     
+            </div>   
+          </section>    
+          <!-- ABOUT SECTION -->   
+           <section id="about">     
+            <h2>About Our Real Estate Services</h2>     
+            <p><strong>Home Service Center - Mithi</strong> connects you with certified real estate agent who provide end-to-end property solutions. From property visits to documentation and  negotiation, our team ensures smooth transactions with full customer satisfaction.</p>   
+          </section>    
+          <!-- PROPERTIES SECTION -->   
+           <section id="properties">     
+          <h2>Featured Properties</h2>     
+          <div class="property-grid">       
+            <div class="property-card">         
+            <img src="./Abdul ghaffar.png" alt="House 1">         
+            <h3>Abdul Ghaffar </h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <a href="estate-1.html">Client</a>        
+          </div>        
+          <div class="property-card">         
+            <img src="./afu.jpg" alt="Plot for Sale">         
+            <h3>Afzal sindhi</h3> 
+            <p>⭐⭐⭐⭐⭐</p>                 
+            <a href="estate-2.html">Client</a>       
+          </div>        
+          <div class="property-card">         
+            <img src="./Screenshot (41).png" alt="Office Space">         
+            <h3>Momin junejo</h3> 
+            <p>⭐⭐⭐⭐⭐</p>                  
+            <a href="estate-3.html">Client</a>       
+          </div>     
+        </div>   
+      </section>    
+      <footer>     
+        <p>Home Service Center | Mithi | Trusted Real Estate Consultants</p>   
+      </footer>  
+        </body>
+       </html> 

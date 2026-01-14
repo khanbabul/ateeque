@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Repair Services | Home Service Center - Mithi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+      color: #0d47a1;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, #1976d2, #0d47a1);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: #1976d2;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffb703;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* HOME SECTION */
+    #home {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    #home img {
+      width: 45%;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #home .hero-text {
+      flex: 1;
+    }
+
+    #home h2 {
+      font-size: 28px;
+      color: #1565c0;
+      margin-bottom: 15px;
+    }
+
+    #home p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    ul {
+      margin-top: 10px;
+      margin-left: 20px;
+      color: #1a237e;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #1565c0;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffb703;
+      transform: scale(1.05);
+    }
+
+    /* ABOUT SECTION */
+    #about {
+      background: #e3f2fd;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #about h2 {
+      color: #1565c0;
+      font-size: 28px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    #about p {
+      line-height: 1.7;
+      font-size: 1.05rem;
+      color: #444;
+      text-align: center;
+    }
+
+    /* CLIENT SECTION */
+    #clients {
+      text-align: center;
+      background: #bbdefb;
+      border-radius: 15px;
+      padding: 50px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #clients h2 {
+      color: #1565c0;
+      margin-bottom: 25px;
+    }
+
+    .client-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .client-card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .client-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .client-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .client-card h3 {
+      color: #1565c0;
+      margin-top: 10px;
+    }
+
+    .client-card p {
+      color: #555;
+      font-size: 0.95rem;
+      margin-top: 5px;
+    }
+
+    footer {
+      text-align: center;
+      background: #1565c0;
+      color: white;
+      padding: 15px;
+      border-top: 3px solid #ffb703;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📱 Mobile Repair Services</h1>
+    <p>Fast & Reliable Mobile Repair Experts in Mithi</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#clients">Clients</a>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <img src="./mobile.jpg" alt="Mobile Repair Service">
+
+    <div class="hero-text">
+      <h2>Expert Mobile Repair & Maintenance</h2>
+      <p>
+        Get your mobile phones repaired quickly and affordably by certified
+        technicians in <strong>Mithi</strong>. Whether it’s a broken screen,
+        charging issue, or battery replacement, our experts handle it all with
+        precision and care.
+      </p>
+
+      <ul>
+        <li>🔋 Battery Replacement & Charging Port Repair</li>
+        <li>📱 Screen & Display Replacement</li>
+        <li>💾 Software Update & Data Recovery</li>
+        <li>🔧 Water Damage Repair</li>
+        <li>🚀 Fast & Affordable On-Door Service</li>
+      </ul>
+
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Our Mobile Repair Service</h2>
+    <p>
+      <strong>Home Service Center - Mithi</strong> connects you with skilled
+      mobile technicians who specialize in all brands — including Samsung, Oppo,
+      Vivo, iPhone, and more. We provide fast, reliable, and affordable
+      services right at your doorstep, ensuring your device gets back to working
+      condition in no time.
+    </p>
+  </section>
+
+  <!-- CLIENTS SECTION -->
+  <section id="clients">
+    <h2>Our Happy Customers</h2>
+    <div class="client-grid">
+      <div class="client-card">
+        <img src="./WhatsApp Image 2025-11-05 at 00.02.47_47e133ee.jpg" alt="Client 1">
+        <h3>Sagar Mobile Lab</h3>
+        <p>“They fixed my broken screen perfectly within an hour!”</p>
+        <p>⭐⭐⭐⭐⭐</p>
+         <a href="MOBILE REPAIR-1.html">Client</a>
+      </div>
+
+      <div class="client-card">
+        <img src="./mehboob.jpg" alt="Client 2">
+        <h3>Mehboob Sagar</h3>
+        <p>“Excellent mobile repair service at a reasonable cost.”</p>
+        <p>⭐⭐⭐⭐⭐</p>
+         <a href="MOBILE REPAIR-2.html">Client</a>
+      </div>
+
+      <div class="client-card">
+        <img src="./mobile.jpg" alt="Client 3">
+        <h3>Aneel Kumar</h3>
+        <p>“My phone was not charging — they repaired it same day!”</p>
+        <p>⭐⭐⭐⭐⭐</p>
+         <a href="MOBILE REPAIR-3.html">Client</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Home Service Center | Mithi | Expert Mobile Repair Technicians</p>
+  </footer>
+
+</body>
+</html>

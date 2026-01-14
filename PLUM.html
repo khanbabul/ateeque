@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plumber Services - Home Service Center</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* 🌊 General Styling */
+    body {
+      /* Poppins is now correctly loaded */
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom right, #caf0f8, #e0f7fa);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    header h1 {
+      font-size: 2em;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    h2 {
+      color: #0077b6;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 1.8em;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 3px;
+      background: #00b4d8;
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 25px;
+      align-items: start;
+    }
+
+    .details img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s;
+    }
+
+    .details img:hover {
+      transform: scale(1.05);
+    }
+
+    .info h3 {
+      color: #023e8a;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    ul {
+      line-height: 1.8;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+      list-style-type: "✔ ";
+      color: #0077b6;
+    }
+
+    /* 💼 Profile Section */
+    .profile {
+      background: #f1fcff;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .profile:hover {
+      transform: scale(1.01);
+      background: #e9f9ff;
+    }
+
+    .profile h3 {
+      color: #0077b6;
+      margin-bottom: 15px;
+      font-size: 1.3em;
+    }
+
+    .profile-item {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .profile-item span {
+      font-weight: bold;
+      color: #023e8a;
+    }
+
+    /* IMPROVEMENT 2: Add Booking Button Styling (Primary CTA) */
+    .booking-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 25px 0 15px 0; /* Adjusted margin to fit above back button */
+        background: #00b4d8;
+        color: white;
+        text-decoration: none;
+        padding: 15px 25px;
+        border-radius: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: all 0.3s;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 180, 216, 0.4); /* Add subtle shadow */
+    }
+
+    .booking-btn:hover {
+        background: #0077b6;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* 🔙 Back Button */
+    a.back-btn {
+      display: inline-block;
+      margin-top: 25px;
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.3s;
+    }
+
+    a.back-btn:hover {
+      background: linear-gradient(135deg, #00b4d8, #90e0ef);
+      box-shadow: 0 4px 10px rgba(0, 183, 255, 0.4);
+    }
+
+    /* 📱 Responsive Design */
+    @media (max-width: 768px) {
+      .details {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🔧 Professional Plumber Services</h1>
+  </header>
+
+  <div class="container">
+    <h2>Reliable Plumbing Solutions at Your Doorstep</h2>
+
+    <div class="details">
+      <img src="rameez.jpg" alt="Plumber">
+
+      <div class="info">
+        <p>Our expert plumbers provide fast, affordable, and reliable solutions for all your home water and pipe problems. We ensure high-quality materials and skilled workmanship to give you a hassle-free experience.</p>
+
+        <h3>🧰 Services We Offer:</h3>
+        <ul>
+          <li>Pipe installation & leakage repair</li>
+          <li>Bathroom & kitchen fittings</li>
+          <li>Water motor repair & replacement</li>
+          <li>Water tank cleaning</li>
+          <li>24/7 emergency plumbing support</li>
+        </ul>
+
+        <h3>💰 Starting Price:</h3>
+        <p><strong>PKR 1000 - PKR 5000</strong> (depending on service)</p>
+      </div>
+    </div>
+
+    <div class="profile">
+      <h3>👨‍🔧 Plumber Details</h3>
+      <div class="profile-item"><span>Name:</span> Rameez Raja</div>
+      <div class="profile-item"><span>Phone:</span> 0300-35353535</div>
+      <div class="profile-item"><span>Address:</span> Near Civil Hospital, Mithi, Tharparkar</div>
+      <div class="profile-item"><span>Experience:</span> 7 Years in Residential & Commercial Plumbing</div>
+      <div class="profile-item"><span>Available Hours:</span> 9:00 AM - 9:00 PM</div>
+    </div>
+    
+    <a href="tel:030035353535" class="booking-btn">📞 Call Rameez Now!</a>
+
+    <a href="index.html" class="back-btn">⬅ Back to Home</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauty Parlor Services | Home Service Center - Mithi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #fff5f8, #ffe6ee);
+      color: #880e4f;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, #ec407a, #ad1457);
+      color: white;
+      text-align: center;
+      padding: 35px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: #d81b60;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffb6c1;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* HOME SECTION */
+    #home {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    #home img {
+      width: 45%;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #home .hero-text {
+      flex: 1;
+    }
+
+    #home h2 {
+      font-size: 28px;
+      color: #ad1457;
+      margin-bottom: 15px;
+    }
+
+    #home p {
+      line-height: 1.6;
+      color: #444;
+    }
+
+    ul {
+      margin-top: 10px;
+      margin-left: 20px;
+      color: #ad1457;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #d81b60;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #f06292;
+      transform: scale(1.05);
+    }
+
+    /* ABOUT SECTION */
+    #about {
+      background: #fce4ec;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #about h2 {
+      color: #ad1457;
+      font-size: 28px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    #about p {
+      line-height: 1.7;
+      font-size: 1.05rem;
+      color: #444;
+      text-align: center;
+    }
+
+    /* SERVICES SECTION */
+    #services {
+      text-align: center;
+      background: #f8bbd0;
+      border-radius: 15px;
+      padding: 50px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #services h2 {
+      color: #ad1457;
+      margin-bottom: 25px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .service-card h3 {
+      color: #ad1457;
+      margin-top: 10px;
+    }
+
+    .service-card p {
+      color: #555;
+      font-size: 0.95rem;
+      margin-top: 5px;
+    }
+
+    footer {
+      text-align: center;
+      background: #ad1457;
+      color: white;
+      padding: 15px;
+      border-top: 3px solid #f48fb1;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>💄 Beauty Parlor Services</h1>
+    <p>Professional Beauty & Makeup Experts in Mithi</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <img src="R.jpeg" alt="Beauty Parlor Service">
+
+    <div class="hero-text">
+      <h2>Enhance Your Beauty, Reveal Your Confidence</h2>
+      <p>
+        At <strong>Home Service Center - Mithi</strong>, we connect you with
+        professional beauticians and stylists who bring salon-quality care right
+        to your home or at our trusted partner parlors.
+      </p>
+
+      <ul>
+        <li>💅 Bridal & Party Makeup</li>
+        <li>💇 Hair Cutting & Styling</li>
+        <li>💆 Facial & Skin Treatments</li>
+        <li>💄 Mehndi & Nail Art</li>
+        <li>🌸 Home Service Available</li>
+      </ul>
+
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Our Beauty Services</h2>
+    <p>
+      <strong>Home Service Center - Mithi</strong> ensures that you get beauty
+      services from trained, hygienic, and experienced professionals. From bridal
+      makeup to skincare and hair styling, our experts make sure you look and feel
+      your best — all at affordable prices.
+    </p>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <h2>Our Top Beauty Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <img src="bridal mackup.jpg" alt="Bridal Makeup">
+        <h3>Bridal Makeup</h3>
+        <p>Get your dream bridal look by expert beauticians with premium products.</p>
+         <p>⭐⭐⭐⭐⭐</p>
+         <a href="parlor-1.html">Client</a>
+      </div>
+
+      <div class="service-card">
+        <img src="./PPP.jpg" alt="Facial">
+        <h3>Facial & Skin Care</h3>
+        <p>Rejuvenate your skin with deep cleansing and glow facials.</p>
+         <p>⭐⭐⭐⭐⭐</p>
+         <a href="parlor-2.html">Client</a>
+      </div>
+
+      <div class="service-card">
+        <img src="./R.jpeg" alt="Hair Styling">
+        <h3>Hair Cutting & Styling</h3>
+        <p>Trendy haircuts, coloring, and professional styling for all occasions.</p>
+         <p>⭐⭐⭐⭐⭐</p>
+         <a href="parlor-3.html">Client</a>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Home Service Center | Mithi | Beauty & Makeup Professionals at Your Doorstep</p>
+  </footer>
+
+</body>
+</html>
